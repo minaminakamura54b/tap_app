@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
-  get 'pages/home'
-  get 'pages/help'
-  get 'pages/about'
-  get 'pages/contact'
+  get '/help', to: "pages#help"
+  get '/about', to: "pages#about"
+  get '/contact', to: "pages#contact"
+  get "/signup", to: "users#new"
 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
